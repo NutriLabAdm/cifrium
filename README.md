@@ -6,4 +6,4 @@
 
 # cifrium
 
-💎⏳ Хакатон ЦК МФТИ. Цифриум. Машинисты  (https://docs.google.com/document/d/1Iiq1pSYpAoJTyzz4hFYPD75WkthUZyB7Xq8ktMs_BrQ/edit?tab=t.0#heading=h.twwayrjm6xcy )
+[💎⏳ Хакатон ЦК МФТИ. Цифриум. Машинисты](https://docs.google.com/document/d/1Iiq1pSYpAoJTyzz4hFYPD75WkthUZyB7Xq8ktMs_BrQ/edit?tab=t.0#heading=h.twwayrjm6xcy )
