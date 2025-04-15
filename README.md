@@ -12,11 +12,12 @@
 Git 
 
 
-* transcript.txt - файл 
+* transcript.txt - 🎦 файл транскрибации видео 
 * utils.py - утилиты 
 
 
 * 01.videos_cut.ipynb - сегментация видео для транскрибации
 * 02.videos_trans.ipynb - транскрибации видео
 * 03.ai_proccesing.ipynb - подкготовка конспекта с использорванием LLM
-* 05.exports.ipynb - экспорт конспекта в форматированный файл 
+* 05.exports.ipynb - экспорт конспекта в форматированный файл
+* 📜 conspects/conspect_API_claude-3-7-sonnet-20250219.md.pptx
