@@ -33,6 +33,11 @@
 * 📊 results/pptx/
 
 
+# материалы проекта 
+* 📊 materials/pptx/  презентации
+* 🖼 materials/images/  изображения
+
+
 
 
 ### Logs
