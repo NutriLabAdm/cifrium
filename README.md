@@ -34,8 +34,8 @@
 
 
 # материалы проекта 
-* 📊 materials/pptx/  презентации
-* 🖼 materials/images/  изображения
+* 📊 materials/pptx/  презентации по проекту 
+* 🖼 materials/images/  изображения, в том числе, экраны 💻 десктоп приложений 
 
 
 
@@ -78,6 +78,7 @@ import pytesseract
 ├── 03.local_proccesing.ipynb
 ├── 04.exports.ipynb
 ├── 05.ocr.ipynb
+├── 08.text-analysis.ipynb
 ├── README.md
 ├── conspects
 │   ├── conspect_API_claude-3-7-sonnet-20250219.md.pptx
@@ -88,44 +89,33 @@ import pytesseract
 │   ├── conspectmodel_meta-llama-3-8b-instruct.Q4_K_M.gguf.txt
 │   └── conspectmodel_mistral-7b-instruct-v0.1.Q8_0.gguf.txt
 ├── materials
+│   ├── git_tree.md
 │   ├── images
 │   │   ├── cifrium_conspect_preview.png
-│   │   └── cifrium_project_flow.png
+│   │   ├── cifrium_project_flow.png
+│   │   ├── desktop_app_conspector.png
+│   │   └── desktop_app_transcribator.png
 │   └── pptx
 │       ├── МАШИНИСТЫ_Цифриум_ВК_образование_вер_4.pptx
+│       ├── МАШИНИСТЫ_Цифриум_образование_вер_5.pptx
+│       ├── МАШИНИСТЫ_Цифриум_образование_вер_6_только_пять_слайдов.pptx
 │       └── Цифриум Frontend.pptx
 ├── prompt_00.txt
 ├── results
 │   ├── conspects
 │   │   ├── conspect_API_claude-3-7-sonnet-20250219.md
 │   │   ├── conspect_DeepSeek-R1-Distill-Qwen-14B-IQ4_XS.gguf.md
-│   │   ├── conspect_DeepSeek-R1-Distill-Qwen-14B-IQ4_XS.gguf__lap-(1).md
 │   │   ├── conspect_Meta-Llama-3.1-8B-Instruct.Q8_0.gguf.md
-│   │   ├── conspect_Meta-Llama-3.1-8B-Instruct.Q8_0.gguf__lap-(0).md
-│   │   ├── conspect_Meta-Llama-3.1-8B-Instruct.Q8_0.gguf__lap-(1).md
 │   │   ├── conspect_Mistral-7B-Instruct-v0.3.Q8_0.gguf.md
-│   │   ├── conspect_Mistral-7B-Instruct-v0.3.Q8_0.gguf__lap-(1).md
 │   │   ├── conspect_Mistral-7B-Instruct-v0.3.fp16.gguf.md
-│   │   ├── conspect_Mistral-7B-Instruct-v0.3.fp16.gguf__lap-(0).md
-│   │   ├── conspect_Mistral-7B-Instruct-v0.3.fp16.gguf__lap-(1).md
 │   │   ├── conspect_YandexGPT-5-Lite-8B-instruct.md
 │   │   ├── conspect_claude-3.7-sonnet-reasoning-gemma3-12B.Q8_0.gguf.md
-│   │   ├── conspect_claude-3.7-sonnet-reasoning-gemma3-12B.Q8_0.gguf__lap-(0).md
-│   │   ├── conspect_claude-3.7-sonnet-reasoning-gemma3-12B.Q8_0.gguf__lap-(1).md
 │   │   ├── conspect_falcon-7b-instruct.md
 │   │   ├── conspect_gpt-3.5-turbo.md
 │   │   ├── conspect_meta-llama-3-8b-instruct.Q4_K_M.gguf.md
-│   │   ├── conspect_meta-llama-3-8b-instruct.Q4_K_M.gguf__lap-(1).md
 │   │   ├── conspect_mistral-7b-instruct-v0.1.Q3_K_L.gguf.md
-│   │   ├── conspect_mistral-7b-instruct-v0.1.Q3_K_L.gguf__lap-(0).md
-│   │   ├── conspect_mistral-7b-instruct-v0.1.Q3_K_L.gguf__lap-(1).md
-│   │   ├── conspect_mistral-7b-instruct-v0.1.Q3_K_L.gguf__lap-(2).md
 │   │   ├── conspect_mistral-7b-instruct-v0.1.Q8_0.gguf.md
-│   │   ├── conspect_mistral-7b-instruct-v0.1.Q8_0.gguf__lap-(0).md
-│   │   ├── conspect_mistral-7b-instruct-v0.1.Q8_0.gguf__lap-(1).md
 │   │   ├── conspect_mistral-7b-instruct-v0.2.Q4_K_M.gguf.md
-│   │   ├── conspect_mistral-7b-instruct-v0.2.Q4_K_M.gguf__lap-(1).md
-│   │   ├── conspect_mistral-7b-instruct-v0.2.Q4_K_M.gguf__lap-(2).md
 │   │   ├── conspect_model_claude-3.7-sonnet-reasoning-gemma3-12B.Q8_0.gguf.md
 │   │   ├── conspect_models_Meta-Llama-3.1-8B-Instruct.Q8_0.gguf.md
 │   │   ├── conspect_models_Mistral-7B-Instruct-v0.3.fp16.gguf.md
@@ -134,13 +124,31 @@ import pytesseract
 │   │   ├── conspect_models_mistral-7b-instruct-v0.1.Q3_K_L.gguf.md
 │   │   ├── conspect_models_mistral-7b-instruct-v0.1.Q8_0.gguf.md
 │   │   ├── conspect_mythomax-l2-13b.Q8_0.gguf.md
-│   │   ├── conspect_mythomax-l2-13b.Q8_0.gguf__lap-(0).md
-│   │   ├── conspect_mythomax-l2-13b.Q8_0.gguf__lap-(1).md
 │   │   ├── conspect_phi-2.Q8_0.gguf.md
-│   │   ├── conspect_phi-2.Q8_0.gguf__lap-(0).md
-│   │   ├── conspect_phi-2.Q8_0.gguf__lap-(1).md
-│   │   └── conspect_phi-2.Q8_0.gguf__lap-(2).md
+│   │   └── laps
+│   │       ├── conspect_DeepSeek-R1-Distill-Qwen-14B-IQ4_XS.gguf__lap-(1).md
+│   │       ├── conspect_Meta-Llama-3.1-8B-Instruct.Q8_0.gguf__lap-(0).md
+│   │       ├── conspect_Meta-Llama-3.1-8B-Instruct.Q8_0.gguf__lap-(1).md
+│   │       ├── conspect_Mistral-7B-Instruct-v0.3.Q8_0.gguf__lap-(1).md
+│   │       ├── conspect_Mistral-7B-Instruct-v0.3.fp16.gguf__lap-(0).md
+│   │       ├── conspect_Mistral-7B-Instruct-v0.3.fp16.gguf__lap-(1).md
+│   │       ├── conspect_claude-3.7-sonnet-reasoning-gemma3-12B.Q8_0.gguf__lap-(0).md
+│   │       ├── conspect_claude-3.7-sonnet-reasoning-gemma3-12B.Q8_0.gguf__lap-(1).md
+│   │       ├── conspect_meta-llama-3-8b-instruct.Q4_K_M.gguf__lap-(1).md
+│   │       ├── conspect_mistral-7b-instruct-v0.1.Q3_K_L.gguf__lap-(0).md
+│   │       ├── conspect_mistral-7b-instruct-v0.1.Q3_K_L.gguf__lap-(1).md
+│   │       ├── conspect_mistral-7b-instruct-v0.1.Q3_K_L.gguf__lap-(2).md
+│   │       ├── conspect_mistral-7b-instruct-v0.1.Q8_0.gguf__lap-(0).md
+│   │       ├── conspect_mistral-7b-instruct-v0.1.Q8_0.gguf__lap-(1).md
+│   │       ├── conspect_mistral-7b-instruct-v0.2.Q4_K_M.gguf__lap-(1).md
+│   │       ├── conspect_mistral-7b-instruct-v0.2.Q4_K_M.gguf__lap-(2).md
+│   │       ├── conspect_mythomax-l2-13b.Q8_0.gguf__lap-(0).md
+│   │       ├── conspect_mythomax-l2-13b.Q8_0.gguf__lap-(1).md
+│   │       ├── conspect_phi-2.Q8_0.gguf__lap-(0).md
+│   │       ├── conspect_phi-2.Q8_0.gguf__lap-(1).md
+│   │       └── conspect_phi-2.Q8_0.gguf__lap-(2).md
 │   ├── docs
+│   │   ├── ~$щественное движение в России 2четверь XIX в_01_large.docx
 │   │   ├── Общественное движение в России 2четверь XIX в_01_base.docx
 │   │   ├── Общественное движение в России 2четверь XIX в_01_large-v1.docx
 │   │   ├── Общественное движение в России 2четверь XIX в_01_large-v2.docx
@@ -181,14 +189,14 @@ import pytesseract
 │   │   └── keyframe_50.jpg
 │   ├── pptx
 │   │   ├── conspect_API_claude-3-7-sonnet-2025021.pptx
-│   │   ├── conspect_API_claude-3-7-sonnet-20250219.md.pptx
 │   │   ├── conspect_API_claude-3-7-sonnet-20250219.pptx
 │   │   ├── conspect_claude-3.7-sonnet-reasoning-gemma3-12B.Q8_0.gguf.md.pptx
 │   │   ├── conspect_gpt-3.5-turbo.md.pptx
 │   │   ├── conspect_models_claude-3.7-sonnet-reasoning-gemma3-12B.Q8_0.gguf.md.pptx
 │   │   ├── conspect_models_meta-llama-3-8b-instruct.Q4_K_M.gguf.md.pptx
 │   │   ├── markdown_with_formatting.pptx
-│   │   └── markdown_with_formatting_using_template.pptx
+│   │   ├── markdown_with_formatting_using_template.pptx
+│   │   └── ~$conspect_claude-3.7-sonnet-reasoning-gemma3-12B.Q8_0.gguf.md.pptx
 │   ├── prompts
 │   │   ├── prompt_00.txt
 │   │   ├── prompt_01.txt
